@@ -20,7 +20,6 @@ spec:
     resources: {}
     script: |
       #!/bin/bash
-      is_argocd=false
       argo_path="config/argocd"
       cicd_path="config/cicd"
       cmd=kubectl
@@ -37,26 +36,19 @@ spec:
       if [[ -d "${argo_path}" ]]; then
         printf "Apply $(basename ${argo_path}) applications\n"
         execute "${argo_path}"
-        is_argocd=true
       fi
 
       printf "Apply $(basename ${cicd_path}) environment\n"
       execute "${cicd_path}/overlays"
 
       for dir in $(ls -d environments/*/); do
-        if ! $is_argocd; then
-          printf "Apply $(basename ${dir}) environment\n"
-          execute "${dir}env/overlays"
-        else
-          if [[ -d "${dir}apps" ]]; then
-            for app in $(ls -d ${dir}apps/*/); do
-              printf "Apply $(basename ${app}) application\n"
-              execute $app
-            done
-          else
-            printf "Apply $(basename ${dir}) environment\n"
-            execute "${dir}env/overlays"
-          fi
+        printf "Apply $(basename ${dir}) environment\n"
+        execute "${dir}env/overlays"
+        if [[ -d "${dir}apps" ]]; then
+          for app in $(ls -d ${dir}apps/*/); do
+            printf "Apply $(basename ${app}) application\n"
+            execute $app
+          done
         fi
       done
 
