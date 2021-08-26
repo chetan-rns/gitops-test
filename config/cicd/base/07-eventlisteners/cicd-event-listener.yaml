@@ -22,7 +22,7 @@ spec:
     - params:
       - name: filter
         value: (header.match('X-GitHub-Event', 'push') && body.repository.full_name
-          == 'chetan-rns/gitops')
+          == 'chetan-rns/gitops-test')
       - name: overlays
         value:
         - expression: body.ref.split('/')[2]

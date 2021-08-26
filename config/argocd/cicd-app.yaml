@@ -32,7 +32,7 @@ spec:
   project: default
   source:
     path: config/cicd/overlays
-    repoURL: https://github.com/chetan-rns/gitops.git
+    repoURL: https://github.com/chetan-rns/gitops-test.git
   syncPolicy:
     automated:
       prune: true
