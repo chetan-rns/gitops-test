@@ -25,4 +25,4 @@ appVersion: "1.0"
 dependencies:
 - name: helm-chart-test
   version: 0.1.0
-  repository: https://chetan-rns.github.io/helm-chart/helm-chart-test-0.1.0.tgz
+  repository: https://chetan-rns.github.io/helm-chart
