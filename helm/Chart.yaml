@@ -23,6 +23,6 @@ version: 0.1.0
 appVersion: "1.0"
 
 dependencies:
-- name: simple-pod
+- name: test
   version: 0.1.0
-  repository: "oci://5dca-49-206-3-94.ngrok.io/helm-chart"
+  repository: https://raw.githubusercontent.com/chetan-rns/helm-chart/master/
