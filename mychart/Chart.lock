@@ -1,0 +1,6 @@
+dependencies:
+- name: test
+  repository: https://raw.githubusercontent.com/chetan-rns/helm-chart/master/
+  version: 0.1.0
+digest: sha256:0d2993fcf810c187a8bd2204352a5b912d22815a8664522dc4bcec709f510e71
+generated: "2021-12-17T11:15:18.878060582+05:30"
