@@ -3,7 +3,7 @@ entries:
   mychart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-12-17T11:16:31.882636512+05:30"
+    created: "2022-01-19T14:12:59.369732173+05:30"
     dependencies:
     - name: test
       repository: https://raw.githubusercontent.com/chetan-rns/helm-chart/master/
@@ -15,4 +15,4 @@ entries:
     urls:
     - mychart-0.1.0.tgz
     version: 0.1.0
-generated: "2021-12-17T11:16:31.881201513+05:30"
+generated: "2022-01-19T14:12:59.368623185+05:30"
