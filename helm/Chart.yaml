@@ -23,6 +23,7 @@ version: 0.1.0
 appVersion: "1.0"
 
 dependencies:
-- name: test
+- name: sample
   version: 0.1.0
-  repository: https://raw.githubusercontent.com/chetan-rns/helm-chart/master/
+  repository: oci://d8e5-49-206-3-94.ngrok.io/sample
+#   repository: https://raw.githubusercontent.com/chetan-rns/helm-chart/master/
