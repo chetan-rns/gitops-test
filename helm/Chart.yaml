@@ -25,4 +25,4 @@ appVersion: "1.0"
 dependencies:
 - name: sample
   version: 0.1.0
-  repository: https://raw.githubusercontent.com/chetan-rns/helm-chart/master/
+  repository: https://raw.githubusercontent.com/chetan-rns/helm-chart/master
