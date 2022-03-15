@@ -2,11 +2,11 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: secret-reader
-  ownerReferences:
-    - apiVersion: pipelines.openshift.io/v1alpha1
-      kind: GitopsService
-      name: gitopsservice-sample
-      uid: 6a92e5ed-8c43-4361-925d-98d047580f20
+#   ownerReferences:
+#     - apiVersion: pipelines.openshift.io/v1alpha1
+#       kind: GitopsService
+#       name: gitopsservice-sample
+#       uid: 6a92e5ed-8c43-4361-925d-98d047580f20
 rules:
 - apiGroups: [""]
   resources: ["secrets"]
