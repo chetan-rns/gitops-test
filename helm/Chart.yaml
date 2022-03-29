@@ -22,13 +22,13 @@ version: 0.1.0
 # follow Semantic Versioning. They should reflect the version the application is using.
 appVersion: "1.0"
 
-# dependencies:
-# - name: sample
-#   version: 0.1.0
-#   repository: https://raw.githubusercontent.com/chetan-rns/helm-chart/master
-
-
 dependencies:
-- name: nginx-ingress-controller
-  version: 9.1.5
-  repository: https://charts.bitnami.com/bitnami
+- name: sample
+  version: 0.1.0
+  repository: https://raw.githubusercontent.com/chetan-rns/helm-chart/master
+
+
+# dependencies:
+# - name: nginx-ingress-controller
+#   version: 9.1.5
+#   repository: https://charts.bitnami.com/bitnami
