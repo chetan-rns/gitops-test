@@ -6,7 +6,7 @@ metadata:
     - apiVersion: pipelines.openshift.io/v1alpha1
       kind: GitopsService
       name: gitopsservice-sample
-      uid: 07ee92ae-f2bf-430d-a593-60f56fc664b9
+      uid: 5b845742-0cda-41ce-aa29-473895878d64
 rules:
 - apiGroups: [""]
   resources: ["secrets"]
